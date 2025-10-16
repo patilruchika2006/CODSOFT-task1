@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio | Projects</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header>
+    <nav>
+      <div class="logo">MyPortfolio</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Projects Section -->
+  <section class="projects">
+    <div class="container">
+      <h1>My Projects</h1>
+      <p>You can have an Overview of projects.</p>
+
+      <div class="project-cards">
+        <div class="project-card" data-delay="0.1s">
+          <img src="project1.png" alt="Landing page" onclick="openModal(this)">
+          <div class="project-info">
+            <h3> Landing page</h3>
+            <p>A Landing page of a cake store showcasing cakes,pastries etc.</p>
+          </div>
+        </div>
+        <div class="project-card" data-delay="0.2s">
+          <img src="todo.jpg" alt="Todo App" onclick="openModal(this)">
+          <div class="project-info">
+            <h3>Todo App</h3>
+            <p>A JavaScript app to manage daily tasks with local storage integration.</p>
+          </div>
+        </div>
+        <div class="project-card" data-delay="0.3s">
+          <img src="ecom.jpeg" alt="Institute Management System" onclick="openModal(this)">
+          <div class="project-info">
+            <h3>Institute Management System</h3>
+            <p>A full-featured Institute Maanagement System with role base access for student,teacher,Admin using CustomTkinter.</p>
+          </div>
+        </div>
+        <div class="project-card" data-delay="0.4s">
+          <img src="blog.jpg" alt="Blog Platform" onclick="openModal(this)">
+          <div class="project-info">
+            <h3>Blog Platform</h3>
+            <p>A modern blog platform built with React and styled-components using Wordpress.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Floating gradient glow -->
+    <div class="projects-glow"></div>
+  </section>
+
+ <div id="lightbox-modal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="modal-img">
+  <div id="caption"></div>
+</div>
+
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Ruchika Patil. All Rights Reserved.
+  </footer>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>

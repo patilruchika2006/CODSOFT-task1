@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Resume | Ruchika Patil</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== Navbar ===== -->
+  <header>
+    <nav>
+      <div class="logo">MyPortfolio<span>.</span></div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="resume.html" class="active">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== Resume Section ===== -->
+  <section class="resume-page">
+    <div class="container">
+      <h1>My Resume</h1>
+      <p>Here’s a quick overview of my education, certifications, and skills. Download my full resume below.</p>
+
+      <div class="resume-content">
+        <div class="resume-box" data-delay="0.1s">
+          <h2>🎓 Education</h2>
+          <p><strong>Pursuing Bachelor of Computer Science</strong><br>
+          Vivekanand Education Society of Arts, Science and Commerce<br>
+          <em>2024 – Present</em></p>
+
+          <p><strong>Higher Secondary Certificate (HSC) – Science Stream</strong><br>
+          Ramnivas Ruia Junior College<br>
+          <em>Completed: 2024</em></p>
+
+          <p><strong>Secondary School Certificate (SSC)</strong><br>
+          ShreeVallabh Ashram English Medium School<br>
+          <em>Completed: 2022</em></p>
+        </div>
+
+        <div class="resume-box" data-delay="0.2s">
+          <h2>Participation</h2>
+          <p><strong>Software Development Competition:</strong> Designed and developed an Institute Management System. Strengthened problem-solving, teamwork, and technical skills. Also actively engaged in college coding club, science exhibitions, and tech festivals.</p>
+        </div>
+
+        <div class="resume-box" data-delay="0.3s">
+          <h2>🛠 Skills Overview</h2>
+          <p>HTML, CSS, JavaScript, Python, Figma</p>
+        </div>
+      </div>
+
+      <!-- Centered Download Button -->
+      <div class="resume-download">
+        <a href="resumepdf.pdf" download class="btn-resume">📄 Download Resume (PDF)</a>
+      </div>
+    </div>
+
+    <!-- Floating glow behind section -->
+    <div class="resume-glow"></div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <p>© <span id="year"></span> Ruchika Patil. All rights reserved.</p>
+  </footer>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
